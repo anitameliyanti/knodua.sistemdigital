@@ -25,6 +25,103 @@
             <H2>RANGKAIAN LOGIKA KOMBINASI</H2>
 <pre>
 <b>Rangkaian Logika Kombinasi</b>  
+Rangkaian Logika kombinasional adalah rangkaian logika dimana output hanya ditentukan
+oleh kombinasi logika input.
+
+<b>Blok Diagram :</b>
+<img src="assets/img/resume/ikombisional.PNG">
+ <b>Prosedur Desain</b>
+1. Menentukan Spesifikasi Rangkaian
+2. Menentukan Algoritma
+3. Menentukan Tabel Kebenaran
+4. Menentukan Fungsi Keluaran Rangkaian
+5. Menentukan Diagram Logika
+6. Menguji Hasil Keluaran
+
+<b>Desain Rangkaian Aritmatika Dasar ( Half Adder )</b>
+
+a. 0    
+  +0
+ ----
+   0
+b. 0    
+  +1
+ ----
+   1
+c. 1
+  +0
+ ----
+   1
+d. 1
+  +1
+ ----
+ 1 0
+ 1 -> Carry Bit
+ 0 -> Sum Bit
+
+Tabel kebenaran :
+
+<img src="assets/img/resume/halfadder.png">
+
+K-Map dari Tabel Kebenaran :
+
+<img src="assets/img/resume/kmap.png">
+
+<b>Rangkaian Multiplexer 2 ke 1 </b>
+
+Tabel Kebenaran :
+
+<img src="assets/img/resume/tabel1.png">
+
+bentuk penyederhanaanya :
+
+<img src="assets/img/resume/tabel2.png">
+
+K-Map dari Tabel Kebenaran :
+
+<img src="assets/img/resume/kmap1.png">
+
+Realisasi dan Simbol Rangkaian :
+
+<img src="assets/img/resume/kmap3.png">
+
+<b>Rangkaian Decoder</b>
+
+Tabel Kebenaran :
+
+<img src="assets/img/resume/decoder1.png">
+
+Diagram Blok Decoder :
+
+<img src="assets/img/resume/decoder2.png">
+
+Persamaan Berdasarkan Tabel Kebenaran :
+
+<img src="assets/img/resume/decoder3.png">
+
+Rangkaian Realisasi Decoder 
+
+<img src="assets/img/resume/rdecoder.png">
+
+Contoh kasus : Saklar Pengontrol Cahaya Ruangan
+
+Suatu ruangan yang memiliki 3 buah pintu dan pada setiap pintu terdapat saklar yang mengontrol cahaya pada ruangan. 
+Kondisi hidup atau matinya lampu tergantung pada kombinasi hubungan ketiga saklar. Lampu akan menyala jika
+salah satu atau seluruh saklar dalam kondisi on. Sedangkan lampu akan padam jika tidak ada saklar yang on atau terdapat 
+dua diantara tiga saklar dalam kondisi on. Jika ketiga saklar dinyatakan sebagai x1, x2, dan x3 dengan kondisi saklar
+on = level logika '1' serta off = level logika '0'
+
+Tabel Kebenaran Berdasarkan ilustrasi soal :
+
+<img src="assets/img/resume/soal1.png">
+
+Realisasi dalam bentuk Kanonikal SOP (Sum-of-Product) f=m1 + m2 + m4 + m7
+
+<img src="assets/img/resume/sop.png">
+
+Realisasi dalam bentuk Kanonikal POS (Product-of-Sum) f = M0 . M3 . M5 . M6
+
+<img src="assets/img/resume/pos.png">
 </pre>
 <div class="lanjut">
     <a href="pertemuan3.html">
