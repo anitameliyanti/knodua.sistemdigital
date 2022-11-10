@@ -1,44 +1,129 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pertemuan Ketiga knodua space</title>
-    <link type="text/css" href="style.css" rel="stylesheet"/> 
+    <link type="text/css" href="style.css" rel="stylesheet" />
 </head>
+
 <body>
     <div id="wrapper">
         <div id="header">
             <div id="title">
                 <h1>KNODUA SPACE</h1>
 
-    </div> 
-    </div>
-    <div id="content wrap">
-        <div id="slider">
-
+            </div>
         </div>
-        <div class="daftar-resume">
-            <h4 class="judul-resume"><a href="">Pertemuan 3</a></h4>
-            <div class="tanggal">10 oktober 2022</div>
-            <H2>ALJABAR BOOLEAN & GERBANG LOGIKA</H2>
-<pre>
+        <div id="content wrap">
+            <div id="slider">
+
+            </div>
+            <div class="daftar-resume">
+                <h4 class="judul-resume"><a href="">Pertemuan 3</a></h4>
+                <div class="tanggal">10 oktober 2022</div>
+                <H2>ALJABAR BOOLEAN & GERBANG LOGIKA</H2>
+                <pre>
 <b>ALJABAR BOOLEAN & GERBANG LOGIKA</b>
 
-</pre>
-<div class="lanjut">
-    <a href="pertemuan2.html">
-        <h4>Pertemuan sebelumnya</h4>
-    </a>
-</div>
-            <div class="lanjut"><a href="pertemuan4.html"><h4>Pertemuan selanjutnya</h4></a></div>
-        </div>
-    </div>  
-    <div id="sidebar">
+Ekspresi Boolean Adalah pernyataan logika dalam bentuk aljabar Boolean.
 
-    <div id="footer">
-        <p>&copy; 2022 knoduaspace Blog</p>
-    </div>
+<b>Fungsi Boolean</b>
+<img src="assets/img/resume/fungsi boolean.PNG">
+
+contoh
+1. X + X' .Y = (X + X').(X +Y) = X+Y
+2. X .(X'+Y) = X.X' + X.Y = X.Y
+3. X.Y+ X'.Z+Y.Z = X.Y + X'.Z + Y.Z.(X+X)'
+                 = X.Y + X'.Z + X.Y.Z + X'.Y.Z
+                 = X.Y.(1+Z) + X'.Z.(1+Y)
+                 = X.Y + X'.Z
+<b>1. Kanonikal dan Bentuk Standard</b>
+
+Kanonikal dan bentuk standard Adalah menyatakan suatu persamaan dalam
+hubungan operasi AND atau OR antar variabel secara lengkap pada setiap suku.
+Dan antar suku dihubungkan dengan operasi OR atau AND.
+<img src="assets/img/resume/minterm.PNG">
+
+<b>2. Minterm</b>
+Adalah suku dalam persamaan yang memiliki hubungan operasi AND antar variabel secara
+lengkap. Dan antar suku dihubungkan dengan OR
+Contoh.
+Tunjukkan fungsi Boolean F = A + B'C dalam
+minterm
+Jawab.
+Fungsi mempunyai 3 variabel A,B dan C
+suku pertama A = A(B+B') (C+C')
+               = ABC+ABC'+AB'C+AB'C'
+suku kedua BC = B'C (A+A')
+              = AB'C + A'B'C
+Jadi penulisan Minterm untuk F = A + B'C
+adalah F = ABC+ABC'+AB'C+AB'C'+A'B'C
+         = m7 + m6 + m5 + m4 + m1
+Atau dapat ditulis dengan notasi
+F (ABC) =  (1,4,5,6,7)
+
+dan tabel kebenaran adalah sebagai berikut 
+<img src="assets/img/resume/tabelkebenaran.PNG">
+<b>3. Maxterm</b>
+Maxterm Adalah suku dalam persamaan yang memiliki hubungan operasi OR antar variabel secara
+lengkap. Dan antar suku di hubungkan dengan operasi AND.
+Contoh.
+Tunjukkan fungsi Boolean F = XY + X'Z dalam
+Maxterm.
+Jawab.
+Fungsi mempunyai 3 variabel X,Y dan Z
+dengan menggunakan Hk.Distributif
+F = XY + X'Z = (XY + X') (XY + Z)
+  = (X + X') (Y + X') (X + Y) (X + Z)
+  = (X' + Y) (X + Z) (Y + Z)
+  Untuk suku 1
+  (X'+ Y) = X'+ Y + ZZ' = (X' + Y + Z) (X' + Y + Z')
+  (X + Z) = X + Z + YY' = (X + Z + Y) (X + Y' + Z)
+  (Y + Z) = Y + Z + XX' = (X + Y + Z) (X' + Y + Z)
+  Jadi dapat ditulis
+  F (XYZ) = (X+Y+Z) (X+Y'+Z) (X'+Y+Z)
+  (X'+Y+Z')
+          = M0.M2.M4.M5
+  Atau ditulis dengan notasi
+  F (XYZ) =  (0,2,4,5)
+
+dan tabel kebenaran adalah sebagai berikut 
+<img src="assets/img/resume/tabelkebenaran2.PNG">
+
+soal latihan
+Ekspresikan fungsi Boolean tsb dalam bentuk Minterm dan Maxterm.
+F (ABCD) = B'D + A'D + BD
+<b>Al jabar Boolean dan Gerbang Logika</b>
+Fungsi Boolean di despresikan dalam bentuk rangkaian dengan gerbang logika
+contoh :
+Buatlah rangkaian dengan Gerbang Logika untuk aljabar Boolean sbb.
+X . ( X' + Y )
+Jawab
+<img src="assets/img/resume/jawab1.PNG">
+<b>4. Implementasi Demorgan dalam Rangkaian Logika</b>
+
+Hukum De Morgan
+(A + B)' = A' . B' A + B = (A' . B')'
+(A . B)' = A' + B' A . B = (A' + B')'
+</pre>
+                <div class="lanjut">
+                    <a href="pertemuan2.html">
+                        <h4>Pertemuan sebelumnya</h4>
+                    </a>
+                </div>
+                <div class="lanjut"><a href="pertemuan4.html">
+                        <h4>Pertemuan selanjutnya</h4>
+                    </a></div>
+            </div>
+        </div>
+        <div id="sidebar">
+
+            <div id="footer">
+                <p>&copy; 2022 knoduaspace Blog</p>
+            </div>
 
 </body>
+
 </html>
