@@ -9,4 +9,4 @@ Humaidi Fikri : 2110220
 Nurul Awal Delly Murti : 2110040 
 Ridho Fitra Palasa : 2110059
 
-https://mdknodua.github.io/knodua.sistemdigital/
+link resume : https://mdknodua.github.io/knodua.sistemdigital/
