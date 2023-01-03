@@ -9,4 +9,4 @@ Humaidi Fikri : 2110220
 Nurul Awal Delly Murti : 2110040 
 Ridho Fitra Palasa : 2110059
 
-link tinkercad: https://www.tinkercad.com/things/lkd5CWzwerD
+https://mdknodua.github.io/knodua.sistemdigital/
