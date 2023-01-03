@@ -1,129 +1,213 @@
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pertemuan Ketiga knodua space</title>
-    <link type="text/css" href="style.css" rel="stylesheet" />
-</head>
-
-<body>
-    <div id="wrapper">
-        <div id="header">
-            <div id="title">
-                <h1>KNODUA SPACE</h1>
-
-            </div>
-        </div>
-        <div id="content wrap">
-            <div id="slider">
-
-            </div>
-            <div class="daftar-resume">
-                <h4 class="judul-resume"><a href="">Pertemuan 3</a></h4>
-                <div class="tanggal">10 oktober 2022</div>
-                <H2>ALJABAR BOOLEAN & GERBANG LOGIKA</H2>
-                <pre>
-<b>ALJABAR BOOLEAN & GERBANG LOGIKA</b>
-
-Ekspresi Boolean Adalah pernyataan logika dalam bentuk aljabar Boolean.
-
-<b>Fungsi Boolean</b>
-<img src="assets/img/resume/fungsi boolean.PNG">
-
-contoh
-1. X + X' .Y = (X + X').(X +Y) = X+Y
-2. X .(X'+Y) = X.X' + X.Y = X.Y
-3. X.Y+ X'.Z+Y.Z = X.Y + X'.Z + Y.Z.(X+X)'
-                 = X.Y + X'.Z + X.Y.Z + X'.Y.Z
-                 = X.Y.(1+Z) + X'.Z.(1+Y)
-                 = X.Y + X'.Z
-<b>1. Kanonikal dan Bentuk Standard</b>
-
-Kanonikal dan bentuk standard Adalah menyatakan suatu persamaan dalam
-hubungan operasi AND atau OR antar variabel secara lengkap pada setiap suku.
-Dan antar suku dihubungkan dengan operasi OR atau AND.
-<img src="assets/img/resume/minterm.PNG">
-
-<b>2. Minterm</b>
-Adalah suku dalam persamaan yang memiliki hubungan operasi AND antar variabel secara
-lengkap. Dan antar suku dihubungkan dengan OR
-Contoh.
-Tunjukkan fungsi Boolean F = A + B'C dalam
-minterm
-Jawab.
-Fungsi mempunyai 3 variabel A,B dan C
-suku pertama A = A(B+B') (C+C')
-               = ABC+ABC'+AB'C+AB'C'
-suku kedua BC = B'C (A+A')
-              = AB'C + A'B'C
-Jadi penulisan Minterm untuk F = A + B'C
-adalah F = ABC+ABC'+AB'C+AB'C'+A'B'C
-         = m7 + m6 + m5 + m4 + m1
-Atau dapat ditulis dengan notasi
-F (ABC) =  (1,4,5,6,7)
-
-dan tabel kebenaran adalah sebagai berikut 
-<img src="assets/img/resume/tabelkebenaran.PNG">
-<b>3. Maxterm</b>
-Maxterm Adalah suku dalam persamaan yang memiliki hubungan operasi OR antar variabel secara
-lengkap. Dan antar suku di hubungkan dengan operasi AND.
-Contoh.
-Tunjukkan fungsi Boolean F = XY + X'Z dalam
-Maxterm.
-Jawab.
-Fungsi mempunyai 3 variabel X,Y dan Z
-dengan menggunakan Hk.Distributif
-F = XY + X'Z = (XY + X') (XY + Z)
-  = (X + X') (Y + X') (X + Y) (X + Z)
-  = (X' + Y) (X + Z) (Y + Z)
-  Untuk suku 1
-  (X'+ Y) = X'+ Y + ZZ' = (X' + Y + Z) (X' + Y + Z')
-  (X + Z) = X + Z + YY' = (X + Z + Y) (X + Y' + Z)
-  (Y + Z) = Y + Z + XX' = (X + Y + Z) (X' + Y + Z)
-  Jadi dapat ditulis
-  F (XYZ) = (X+Y+Z) (X+Y'+Z) (X'+Y+Z)
-  (X'+Y+Z')
-          = M0.M2.M4.M5
-  Atau ditulis dengan notasi
-  F (XYZ) =  (0,2,4,5)
-
-dan tabel kebenaran adalah sebagai berikut 
-<img src="assets/img/resume/tabelkebenaran2.PNG">
-
-soal latihan
-Ekspresikan fungsi Boolean tsb dalam bentuk Minterm dan Maxterm.
-F (ABCD) = B'D + A'D + BD
-<b>Al jabar Boolean dan Gerbang Logika</b>
-Fungsi Boolean di despresikan dalam bentuk rangkaian dengan gerbang logika
-contoh :
-Buatlah rangkaian dengan Gerbang Logika untuk aljabar Boolean sbb.
-X . ( X' + Y )
-Jawab
-<img src="assets/img/resume/jawab1.PNG">
-<b>4. Implementasi Demorgan dalam Rangkaian Logika</b>
-
-Hukum De Morgan
-(A + B)' = A' . B' A + B = (A' . B')'
-(A . B)' = A' + B' A . B = (A' + B')'
-</pre>
-                <div class="lanjut">
-                    <a href="pertemuan2.html">
-                        <h4>Pertemuan sebelumnya</h4>
-                    </a>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>knodua</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../assets/logo.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="../assets/konten/css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">KNODUA.SPACE</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../pages/pertemuan2.html">PERTEMUAN SEBELUMNYA</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="../pages/pertemuan4.html">PERTEMUAN SELANJUTNYA</a></li>
+                    </ul>
                 </div>
-                <div class="lanjut"><a href="pertemuan4.html">
-                        <h4>Pertemuan selanjutnya</h4>
-                    </a></div>
             </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+				
+                <img src="../assets/logo.png" alt="..." />
+                <!-- Masthead Heading-->
+                
+                <!-- Icon Divider-->
+                        <div class="divider-custom divider-light">
+                             <div class="divider-custom-line"></div>
+                             <div class="divider-custom-line"></div>
+                             <div class="divider-custom-line"></div>
+                             <div class="divider-custom-line"></div>
+                        </div>
+                <!-- Masthead Subheading-->
+        
+            </div>
+        </header>
+
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Pertemuan 3</h2>
+                <h5 class="text-center">10 oktober 2022 - ALJABAR BOOLEAN & GERBANG LOGIKA </h5>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Pengisian Resume-->
+                <div class="row">
+                    <div class="col-lg-12 ms-auto"><p class="lead" text-align="justify">
+                        Ekspresi Boolean Adalah pernyataan logika dalam bentuk aljabar Boolean. <br> <br>
+                        
+                        <b>Fungsi Boolean</b> <br>
+                        <img src="assets/img/resume/fungsi boolean.PNG">
+                        <br>
+                        contoh <br>
+                        1. X + X' .Y = (X + X').(X +Y) = X+Y <br>
+                        2. X .(X'+Y) = X.X' + X.Y = X.Y <br>
+                        3. X.Y+ X'.Z+Y.Z = X.Y + X'.Z + Y.Z.(X+X)' <br>
+                                         = X.Y + X'.Z + X.Y.Z + X'.Y.Z <br>
+                                         = X.Y.(1+Z) + X'.Z.(1+Y) <br>
+                                         = X.Y + X'.Z <br> <br>
+                        <b>1. Kanonikal dan Bentuk Standard</b>
+                        <br>
+                        Kanonikal dan bentuk standard Adalah menyatakan suatu persamaan dalam
+                        hubungan operasi AND atau OR antar variabel secara lengkap pada setiap suku.
+                        Dan antar suku dihubungkan dengan operasi OR atau AND. <br>
+                        <img src="assets/img/resume/minterm.PNG">
+                        <br><br>
+                        <b>2. Minterm</b> <br><br>
+                        Adalah suku dalam persamaan yang memiliki hubungan operasi AND antar variabel secara
+                        lengkap. Dan antar suku dihubungkan dengan OR <br>
+                        Contoh. <br>
+                        Tunjukkan fungsi Boolean F = A + B'C dalam 
+                        minterm <br>
+                        Jawab. <br>
+                        Fungsi mempunyai 3 variabel A,B dan C <br>
+                        suku pertama A = A(B+B') (C+C') <br>
+                                       = ABC+ABC'+AB'C+AB'C' <br>
+                        suku kedua BC = B'C (A+A') <br>
+                                      = AB'C + A'B'C <br>
+                        Jadi penulisan Minterm untuk F = A + B'C <br>
+                        adalah F = ABC+ABC'+AB'C+AB'C'+A'B'C <br>
+                                 = m7 + m6 + m5 + m4 + m1 <br>
+                        Atau dapat ditulis dengan notasi <br>
+                        F (ABC) =  (1,4,5,6,7) <br>
+                        
+                        dan tabel kebenaran adalah sebagai berikut <br>
+                        <img src="assets/img/resume/tabelkebenaran.PNG"> <br> <br>
+                        <b>3. Maxterm</b>
+                        Maxterm Adalah suku dalam persamaan yang memiliki hubungan operasi OR antar variabel secara
+                        lengkap. Dan antar suku di hubungkan dengan operasi AND. <br>
+                        Contoh. <br>
+                        Tunjukkan fungsi Boolean F = XY + X'Z dalam
+                        Maxterm. <br>
+                        Jawab. <br>
+                        Fungsi mempunyai 3 variabel X,Y dan Z
+                        dengan menggunakan Hk.Distributif
+                        F = XY + X'Z = (XY + X') (XY + Z) <br>
+                          = (X + X') (Y + X') (X + Y) (X + Z) <br>
+                          = (X' + Y) (X + Z) (Y + Z) <br>
+                          Untuk suku 1 <br>
+                          (X'+ Y) = X'+ Y + ZZ' = (X' + Y + Z) (X' + Y + Z') <br>
+                          (X + Z) = X + Z + YY' = (X + Z + Y) (X + Y' + Z) <br>
+                          (Y + Z) = Y + Z + XX' = (X + Y + Z) (X' + Y + Z) <br>
+                          Jadi dapat ditulis <br>
+                          F (XYZ) = (X+Y+Z) (X+Y'+Z) (X'+Y+Z) <br>
+                          (X'+Y+Z') <br>
+                                  = M0.M2.M4.M5 <br>
+                          Atau ditulis dengan notasi <br>
+                          F (XYZ) =  (0,2,4,5)  <br>
+                        
+                        dan tabel kebenaran adalah sebagai berikut <br>
+                        <img src="assets/img/resume/tabelkebenaran2.PNG">
+                        <br><br>
+                        soal latihan <br><br>
+                        Ekspresikan fungsi Boolean tsb dalam bentuk Minterm dan Maxterm. 
+                        F (ABCD) = B'D + A'D + BD <br><br>
+                        <b>Al jabar Boolean dan Gerbang Logika</b> <br><br>
+                        Fungsi Boolean di despresikan dalam bentuk rangkaian dengan gerbang logika <br>
+                        contoh : <br>
+                        Buatlah rangkaian dengan Gerbang Logika untuk aljabar Boolean sbb.
+                        X . ( X' + Y ) <br><br>
+                        Jawab <br>
+                        <img src="assets/img/resume/jawab1.PNG"> <br><br>
+                        <b>4. Implementasi Demorgan dalam Rangkaian Logika</b> <br><br>
+                        
+                        Hukum De Morgan <br>
+                        (A + B)' = A' . B' A + B = (A' . B')' <br>
+                        (A . B)' = A' + B' A . B = (A' + B')' <br>
+
+                    </div>
+                </div>
+                 <!-- Akhir Resume-->
+        </section>
+       
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">SISTEM DIGITAL</h4>
+                        <p class="lead mb-0">
+                           Knoduaspace
+                            <br />
+                            Pertemuan 3
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">---------------</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+                    <!-- Footer About Text-->
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">Anggota Kelompok</h4>
+                        <p class="lead mb-0">
+                            Anita Meliyanti
+                                <br>
+                            Ridho Fitra Palasa
+                                <br>
+                            Nurul Delly Awal Murti
+                                <br>
+                            Humaidi Fikri
+                                <br>
+                            Hayatun Nufus
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; knodua.space 2022</small></div>
         </div>
-        <div id="sidebar">
-
-            <div id="footer">
-                <p>&copy; 2022 knoduaspace Blog</p>
-            </div>
-
-</body>
-
+        <!-- Portfolio Modals-->
+    
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="../assets/konten/js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
 </html>
