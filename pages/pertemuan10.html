@@ -68,7 +68,58 @@
                 <!-- Pengisian Resume-->
                 <div class="row">
                     <div class="col-lg-12 ms-auto"><p class="lead" text-align="justify">
-                        isi resume
+                        <b>1. Pengertian Register</b>
+                        <br><br>
+                        Register adalah rangkaian logika yang digunakan untuk menyimpan data. Dengan kata lain, register<br>
+                        adalah rangkaian yang tersusun dari satu atau beberapa flipflop yang digabungkan menjadi satu.<br>
+                        flip flop juga disebut sebagai register 1 bit.<br>
+                        jadi untuk menyimpan 4 bit data, register harus terdiri dari 4 buah flipflop.<br>
+                        Register digunakan sebagai tempat menyimpan sementara sebuah bit data.<br>
+                        Bit-bit data ("1" atau "0") yang sedang berjalan didalam sebuah sistem digital,<br>
+                        kadang-kadang perlu dihentikan, dicopy, dipindahkan atau hanya digeser ke kiri atau ke kanan <br>
+                        satu atau lebih posisi.<br>
+                        shift register akan menerima maupun mengeluarkan data dengan cara pergeseran<br>
+                        yaitu menggeser satu bit data ke kiri atau ke kanan untuk setiap satu periode clock yang diberikan. <br>
+                        <img src="assets/img/resume/modelpergeseran.PNG"><br>
+                        <b>2. Macam-macam Shift Register</b>
+                        <br><br>
+                        1. Parallel in Parallel Out (PIPO)<br>
+                        perhatikan gambar berikut : <br>
+                        <img src="assets/img/resume/pipo.PNG"><br>
+                        A,B,C dan D adalah sinyal masukan. saat clock (pemicu) diaktifkan (Logika 1)<br>
+                        maka data yang ada akan dikeluarkan secara bersama-sama ke Q3, Q2, Q1 dan Q0.<br>
+                        saat clock kembali tidak dipicu (Logika 0), maka apapun masukannya keluaran Q akan tetap.<br>
+                        <br>
+                        2. Parallel in-serial Out (PISO)<br>
+                        <img src="assets/img/resume/piso.PNG"><br>
+                        <img src="assets/img/resume/piso1.PNG"><br>
+                        Gambar 6.1 menjelaskan sebagai berikut :<br> 
+                        • Sebuah grup terdiri dari 4 buah D Flip-flop.Langkah pertama adalah membebani<br>
+                        register di atas dengan 1-0-0-0. “Paralel Load” berarti membebani ke-empat flip-flop<br>
+                        dalam waktu yang bersamaan. Pembebanan diberikan melalui input SD pada masing-masing flip-flop.<br> 
+                        • Selanjutnya, clock pertama meyebabkan seluruh bit menggeser satu posisi ke<br>
+                        kanan, karena input dari masing-masing flip-flop mendapatkan output dari flip-flop sebelumnya.<br>
+                        • Setiap penekanan clock menyebabkan penggeseran satu posisi ke kanan. Pada<br> 
+                        pulsa ke empat, seluruh bit sudah tergeser ke peralatan penerima data serial,<br> 
+                        sesuai dengan data awal yang diberikan. Koneksi antara ke-empat flip-flop di atas<br>
+                        bisa berupa kabel transmisi serial (serial data, clock dan ground).<br> 
+                        <br>
+                        3. Serial In Serial Out (SISO)<br>
+                        Perhatikan Gambar Berikut :<br>
+                        <img src="assets/img/resume/siso.PNG"><br>
+                        • Saat sinyal clock diberikan pertama kali, data dari Si masuk ke flipflop A, pada saat<br>
+                        clock kedua, data dari flipflop A masuk ke flipflop B, demikian seterusnya, sampai keluar ke So.<br>
+                        • Jadi pada register SISO untuk membaca data pertama kali dibutuhkan jumlah clock yang sama banyak dengan<br>
+                        jumlah flipflop yang ada pada register (dalam hal ini adalah empat).<br>
+                        <br>
+                        4. Serial in parallel Out (SIPO)
+                        <br>
+                        <img src="assets/img/resume/sipo.PNG"><br>
+                        Serial - in parallel-out<br>
+                        <img src="assets/img/resume/inout.PNG"><br>
+                        IC Shift Register<br>
+                        <img src="assets/img/resume/ic.PNG"><br>
+                        
                     </div>
                 </div>
                  <!-- Akhir Resume-->
